@@ -1,0 +1,697 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	  <script src="getVisitors.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Nas Tber - Resume</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+        .Navbar ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0
+        }
+
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit
+        }
+
+        body {
+            margin: 0;
+            background-color: #fff
+        }
+
+        img {
+            max-width: 100%;
+            height: auto
+        }
+
+        .u-cf:before,
+        .u-cf:after {
+            content: " ";
+            display: table
+        }
+
+        .u-cf:after {
+            clear: both
+        }
+
+        .u-hug {
+            margin-top: 0 !important
+        }
+
+        .u-pullRight {
+            float: right
+        }
+
+        .u-keyline {
+            position: relative
+        }
+
+        .u-keyline:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            border-top: 1px solid #ddd
+        }
+
+        .u-link {
+            text-decoration: none;
+            position: relative;
+            display: inline-block
+        }
+
+        .u-link:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            bottom: .2em;
+            width: 100%;
+            height: 2px;
+            background-color: #FFB266
+        }
+
+        .u-link:visited:before {
+            background-color: #ddd
+        }
+
+        .u-link:hover:before {
+            background-color: #FFFFFF
+        }
+
+        .u-shadow {
+            transition: text-shadow .2s ease-in-out
+        }
+
+        a:hover .u-shadow {
+            text-shadow: -4px -4px 0 #FFB266
+        }
+
+        @media (max-width:767px) {
+            .u-hidden\@sm-down {
+                display: none !important
+            }
+        }
+
+        @media (max-width:543px) {
+            .u-hidden\@xs-down {
+                display: none !important
+            }
+        }
+
+        body {
+            color: #333;
+            font-size: 1.6rem;
+            font-family: Lato, Helvetica, Arial, sans-serif;
+            font-weight: normal;
+            line-height: 1.5;
+            letter-spacing: .008em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #111;
+            line-height: 1.2;
+            font-weight: 900
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        p {
+            margin-top: 1.6rem;
+            margin-bottom: 0
+        }
+
+        h3,
+        .h3 {
+            font-size: 2rem;
+            margin-top: 3.2rem
+        }
+
+        a {
+            color: #333
+        }
+
+        ul {
+            padding-left: 1.8rem
+        }
+
+        .Title {
+            font-size: 50px;
+            font-size: 8vw;
+            font-family: Lato, 'Open Sans', Helvetica, Arial;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            display: inline-block
+        }
+
+        @media (max-width:525px) {
+            .Title {
+                font-size: 42px
+            }
+        }
+
+        @media (min-width:937.5px) {
+            .Title {
+                font-size: 75px
+            }
+        }
+
+        .Title-sub {
+            font-size: .34em;
+            letter-spacing: .16em;
+            font-weight: 400;
+            text-transform: none;
+            display: block;
+            margin-top: 1.2rem;
+            padding-top: 1.6rem;
+            border-top: .45em solid
+        }
+
+        .l-Wrapper {
+            width: 80%;
+            max-width: 90rem;
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        @media (max-width:767px) {
+            .l-Wrapper--reset\@sm-down {
+                width: 100%
+            }
+        }
+
+        .l-Header {
+            margin-top: 6.4rem;
+            margin-bottom: 3.2rem
+        }
+
+        .l-Header-col {
+            margin-top: 3.2rem;
+            margin-bottom: 3.2rem
+        }
+
+        @media (min-width:544px) {
+            .l-Header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end
+            }
+
+            .l-Header-col:last-child:not(:first-child) {
+                text-align: right
+            }
+        }
+
+        .l-Section {
+            margin-top: 6.4rem
+        }
+
+        .l-Section+.l-Section {
+            position: relative;
+            border-top: 1px solid #ddd
+        }
+
+        .l-Section+.l-Section:before {
+            content: "";
+            font-size: 50px;
+            font-size: 8vw;
+            position: absolute;
+            top: -.1rem;
+            border-top: .153em solid;
+            width: 4rem
+        }
+
+        @media (max-width:525px) {
+            .l-Section+.l-Section:before {
+                font-size: 42px
+            }
+        }
+
+        @media (min-width:937.5px) {
+            .l-Section+.l-Section:before {
+                font-size: 75px
+            }
+        }
+
+        .l-Section-title,
+        .l-Section-content {
+            margin-top: 3.2rem
+        }
+
+        .l-Section-content>:first-child,
+        .l-Section-content>:first-child>h3 {
+            margin-top: 0
+        }
+
+        .l-Section-content>p:first-child,
+        .l-Section-content>ul:first-child {
+            margin-top: .3rem
+        }
+
+        .l-Section-group {
+            display: inline
+        }
+
+        @media (min-width:768px) {
+            .l-Section {
+                display: flex
+            }
+
+            .l-Section:before {
+                display: none
+            }
+
+            .l-Section-title {
+                flex: 0 0 24%
+            }
+        }
+
+        .l-Footer {
+            font-size: 1.4rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 12.8rem -.8rem 3.2rem;
+            padding-top: 3.2rem
+        }
+
+        .l-Footer a {
+            text-decoration: none;
+            display: inline-block
+        }
+
+        .l-Footer a:not(:last-child) {
+            margin-right: 1.6rem
+        }
+
+        .l-Footer a:hover {
+            color: #111
+        }
+
+        .l-Footer-col {
+            padding-left: .8rem;
+            padding-right: .8rem
+        }
+
+        .Navbar {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
+            line-height: 4rem;
+            letter-spacing: .28rem;
+            text-transform: uppercase;
+            width: 100%;
+            background-color: #111
+        }
+
+        .Navbar a:not(.Navbar-toggle) {
+            color: inherit;
+            text-decoration: none
+        }
+
+        .Navbar li {
+            display: inline-block
+        }
+
+        .Navbar a {
+            display: block;
+            padding: 0 .8rem
+        }
+
+        a.Navbar-btn {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            background: #FFB266
+        }
+
+        a.Navbar-btn:hover {
+            background: #111
+        }
+
+        @media (max-width:767px) {
+            .Navbar {
+                text-align: right
+            }
+
+            .Navbar ul:not(:first-child) {
+                display: inline-block;
+                padding-right: 1.6rem !important
+            }
+        }
+
+        .Tag {
+            color: #111;
+            text-shadow: 1px 1px 0 rgba(255, 178, 102, .5);
+            font-weight: 700;
+            line-height: 1;
+            position: relative;
+            display: inline-block;
+            padding-left: .8rem;
+            padding-right: .8rem
+        }
+
+        .Tag:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1em;
+            bottom: 0;
+            margin: auto;
+            border-radius: .2rem;
+            background-color: rgba(255, 178, 102, .5);
+            transition: all .8s .4s ease-in-out
+        }
+
+        .Tag:hover:before {
+            transform: scale(1.05, 2.4);
+            background-color: #FFB266;
+            transition-delay: 0s;
+            transition-duration: .2s
+        }
+
+        @media print {
+            html {
+                font-size: 50%
+            }
+
+            .l-Wrapper {
+                width: 100%;
+                max-width: none
+            }
+
+            .Navbar,
+            .u-hidden\@print {
+                display: none
+            }
+
+            .l-Header,
+            .l-Header-col {
+                margin-top: 0
+            }
+
+            .l-Footer,
+            .l-Section {
+                margin-top: 3.2rem
+            }
+
+            h3,
+            .h3,
+            .l-Section-title,
+            .l-Section-content {
+                margin-top: 1.8rem
+            }
+
+            .Title {
+                font-size: 4.5rem
+            }
+
+            .l-Header {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end
+            }
+
+            .l-Header-col:last-child:not(:first-child) {
+                text-align: right
+            }
+
+            .l-Section {
+                position: relative;
+                padding-top: 5px;
+                border-top: 1px solid #ddd
+            }
+
+            .l-Section:before {
+                display: none
+            }
+
+            .l-Section:after {
+                content: "";
+                position: absolute;
+                top: -1px;
+                left: 0;
+                border-top: 5px solid;
+                width: 4rem
+            }
+
+            .l-Section-group {
+                display: block;
+                /* page-break-inside: avoid */
+            }
+
+            .Tag {
+                font-weight: 900;
+                display: inline;
+                padding-left: 0;
+                padding-right: 0
+            }
+
+            *,
+            *:before,
+            *:after,
+            p:first-letter,
+            div:first-letter,
+            blockquote:first-letter,
+            li:first-letter,
+            p:first-line,
+            div:first-line,
+            blockquote:first-line,
+            li:first-line {
+                background: transparent !important;
+                color: #000 !important;
+                box-shadow: none !important;
+                text-shadow: none !important
+            }
+
+            a,
+            a:visited {
+                text-decoration: underline
+            }
+
+            p,
+            h2,
+            h3,
+            li {
+                orphans: 3;
+                widows: 3
+            }
+
+            h2,
+            h3 {
+                page-break-after: avoid
+            }
+
+            .Contact:after {
+                content: "(206) 960-0961";
+                padding-left: 1.6rem
+            }
+        }
+
+        @page {
+            margin: 2.2cm 2.2cm 1.8cm
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="Navbar">
+        <div class="l-Wrapper l-Wrapper--reset@sm-down">
+            <ul class="u-pullRight u-hidden@xs-down">
+                <li>
+                    <a class="Navbar-btn Navbar-btn--main" href="">
+                        Download
+                        <span>(pdf)</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+							<li>
+									<p>You are visitor number: <span id="visitors">!</span></p>
+							</li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nasreddinetber">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/nastber">GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="l-Wrapper">
+
+        <div class="l-Header">
+            <div class="l-Header-col">
+                <a href="https://www.nastber.com">
+                    <h1 class="Title">
+                        <span class="u-shadow">
+                            Nasreddine
+                            <br> Tber
+                        </span>
+                    </h1>
+                </a>
+            </div>
+            <div class="l-Header-col Contact">
+                <div>Greater Boston Area</div>
+                <div>
+                    <a class="u-link" href="https://nastber.com/">www.nastber.com</a>
+                </div>
+                <div>
+                    <a class="u-link" href="mailto:nasreddinetber@gmail.com">nasreddinetber@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="l-Section">
+            <h2 class="l-Section-title h3 u-hidden@sm-down">Profile</h2>
+            <div class="l-Section-content">
+                <p></p>
+            </div>
+        </section>
+
+        <section class="l-Section">
+            <h2 class="l-Section-title h3">Skills & Certifications</h2>
+            <div class="l-Section-content">
+                <ul>
+                    <li>Familiarity with various programming concepts and languages such as JavaScript, PHP, and SQL
+                    </li>
+										<li>Strong analytical and problem-solving skills with the ability to adapt quickly
+                    </li>
+										<li>Quick learner with a passion for IT and a willingness to explore new concepts
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="l-Section">
+            <h2 class="l-Section-title h3">Experience</h2>
+            <div class="l-Section-content">
+                <div class="l-Section-group">
+                    <h3>IT Support Technician</h3>
+                    <a class="u-link" href="https://www.enterprisedb.com">EnterpriseDB </a> - Bedford, MA
+                    <br> September 2023 - Present
+										<ul>
+                        <li>Mac/Windows support in a Google Workspace environment for over 800 users</li>
+                        <li>Experience in administrating in Workspace One</li>
+                    </ul>
+                </div>
+
+                <div class="l-Section-group">
+                    <h3>Systems Administrator</h3>
+                    <a class="u-link" href="https://www.walkersands.com"> Walker Sands </a> - Boston, MA
+                    <br> October 2022 - July 2023
+                    <ul>
+											<li> Mac systems administrator in a Google Workspace environment for 300 users
+											</li>
+											<li> Experience using Mosyle MDM and NinjaRMM
+											</li>
+											<li> Solved network issues in a Cisco Meraki environment
+											</li>
+											<li> Configure Palo Alto and SonicWall firewalls
+											</li>
+											<li> Various IT projects: Slack SSO, ticketing system migration, domain transfers, licensing
+											</li>
+											<li> Provisioning Apple computers for new users and deprovisioning for exiting users
+											</li>
+											<li> Wrote all technical documentation for the entire IT department
+											</li>
+                    </ul>
+                </div>
+
+                <div class="l-Section-group">
+                    <h3>Systems Administrator/Team Lead</h3>
+                    <a class="u-link" href="https://www.nationalguard.com"> NH Army National Guard </a> - Manchester, NH
+                    <br> November 2017 - November 2023
+                    <ul>
+                        <li> Operated as a System Administrator while supporting US Border Patrol in 2020
+                        </li>
+												<li> Managed 150 users in the Army Training & Certification Tracking System, ensuring they were compliant with US Army standards
+                        </li>
+												<li> Provided desktop support to ~500 users in various locations
+                        </li>
+												<li> Assisted with planning Internet connectivity design inside the tactical operation center
+                        </li>
+												<li> Assisted in decision making for solutions to connectivity issues in remote areas
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="l-Section-group">
+                    <h3>IT Intern</h3>
+                    <a class="u-link" href="https://www.elbitamerica.com"> Elbit Systems of America </a> - Merrimack, NH
+                    <br> Septmber 2018 - January 2020
+                    <ul>
+											<li> Assisted level 2 helpdesk team in various areas, such as imaging computers and responding to tickets in a timely manner
+											</li>
+											<li> Provided excellent customer service to employees via email, on the phone, and in person
+											</li>
+											<li> Took charge of new hires and made sure each desk space and computer were prepared for the first day
+											</li>
+											<li> Assisted in the transition from Windows 7 to Windows 10 throughout 2018
+											</li>
+											<li> Performed hardware repairs on both laptops and desktops when applicable
+											</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="l-Section">
+            <h2 class="l-Section-title h3">Education</h2>
+            <div class="l-Section-content">
+                <h3>BS, Information Technology <br><font size="-1">Minor in Business Administration</font></h3>
+                <a class="u-link" href="https://catalog.unh.edu/undergraduate/engineering-physical-sciences/programs-study/computer-science/information-technology-major-bs/">University of New Hampshire</a> - Durham, NH
+                <br> May 2022
+            </div>
+        </section>
+
+    </article>
+
+    <div class="l-Wrapper u-keyline">
+        <div class="l-Footer">
+            <div class="l-Footer-col">
+            </div>
+            <div class="l-Footer-col Contact">
+                <a href="https://nastber.com">nastber.com</a>
+                <a href="mailto:nasreddinetber@gmail.com">nasreddinetber@gmail.com</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
